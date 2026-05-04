@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-strong-dark:#000000;
+    --color-lighter-dark:#1B1F26;
+    --color-gray:#686868;
+    --color-dark-blue:#242933;
+    --color-white-obscure: #F5F6F9;
+    --spacing-sm10: 10px;
+    --spacing-sm20: 20px;
+    --spacing-sm30: 30px;
+    --spacing-md40: 40px;
+    --spacing-md50: 50px;
+    --spacing-md60: 60px;
+    --spacing-lg70: 70px;
+    --spacing-lg80: 80px;
+    --spacing-lg90: 90px;
+    --spacing-lg100: 100px;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 7vmin;
+}
+
+h2 {
+    color: var(--color-dark-blue);
+    font-size: 5vmin;
+}
+
+h3 {
+    color: var(--color-dark-blue);
+    font-size: 4.2vmin;
+}
+
+p {
+    color: var(--color-dark-blue);
+    font-size: 4vmin;
+}
+
+a {
+    color: var(--color-dark-blue);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+
+.hero {
+    height: 100vh;
+    padding-inline:var(--spacing-lg80);
+    background-color: chocolate;
+}
+
+.header-hero {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+}
+
+.header-hero h1 {
+    background-color: aqua;
+}
+
+.header-hero nav {
+    background-color: blueviolet;
+}
+
+
+.menu-list {
+    display: flex;
+    gap: var(--spacing-sm20);
+
+}
+
+.logo{
+    background-color: #1B1F26;
+    text-align: center;
+    padding: 36px;
+}
+
+.logo img {
+    width: 15%;
+}
+
+.logo h2 {
+    color: white;
+}
+
+.membros{
+    text-align: center;
+    background-color: var(--color-white-obscure);
+}
+
+.hero-introduction-container {
+    height: calc(70vh - 100px);
+    padding-top: var(--spacing-lg70);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm10);
+    background-color: chartreuse;
+}
+
+.hero-introduction-container .introduction-p {
+    width: 45%;
+}
+
+.hero-introduction-container .introduction-link {
+    margin-top: var(--spacing-lg70);
+    font-size: 3vmin;
+}
+
+.desenvolvido-gembyte {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--spacing-lg100);
+
+}
+
+.desenvolvido-gembyte-topo {
+    font-size: 2.5vmin;
+    font-weight: 800;
+}
+
+/*
+.hero-introduction-container h1 {
+    font-size: 7vmin;
+    text-wrap: balance;
+}
+*/
+
+
+/*
+.hero-introduction-container p {
+    font-size: 4vmin;
+    width: 45%;
+    text-wrap: balance;
+}
+*/
+
+section {
+    height: 100vh;
+}
+
+/* Css do sobre-nos */
