@@ -68,20 +68,21 @@ a {
 
 
 .section-hero {
-    height: 100vh;
+    min-height: 100vh;
     padding-inline:var(--spacing-s80);
-    background-color: chocolate;
+    background-color: #242933;
 }
 
 .header-hero {
-    height: 100px;
+    min-height: 100px;
     display: flex;
     align-items: center;
-    background-color: blue;
+    justify-content: space-between;
 }
 
 .header-hero h1 {
     background-color: aqua;
+    font-size: 4.5vmin;
 }
 
 .header-hero nav {
@@ -165,7 +166,7 @@ a {
 }
 
 .hero-introduction-container {
-    height: calc(100vh - 100px);
+    min-height: 300px;
     width: 45%;
     padding-top: var(--spacing-s70);
     display: flex;
@@ -176,7 +177,6 @@ a {
 }
 
 .celular-icones-container {
-    height: calc(100vh - 100px);
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -184,9 +184,8 @@ a {
 }
 
 .celular-icones-container img {
-     height: calc(100vh - 100px);
+     min-height: 100px;
 }
-
 
 
 .hero-introduction-container .introduction-link {
@@ -212,7 +211,7 @@ a {
 
 .cards-home {
     background-color: white;
-    height: 420px;
+    min-height: 420px;
     width: 580px;
     border-radius: 10px;
 }
@@ -222,7 +221,7 @@ a {
     padding: var(--spacing-s40);
 }
 .cards-home img {
-    height: 290px;
+    min-height: 290px;
     display: flex;
     margin: auto;
     margin-top: var(--spacing-s60);
@@ -242,7 +241,7 @@ a {
 
 
 section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Css do sobre-nos */
