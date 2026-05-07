@@ -22,8 +22,9 @@
     --spacing-s80: 80px;
     --spacing-s90: 90px;
     --spacing-s100: 100px;
+    --font-size-h1-12v: 12vmin;
     --font-size-h1-7v: 7vmin;
-    --font-size-h2-5v: 5vmin;
+    --font-size-h2-6v: 6vmin;
     --font-size-h3-4-2v: 4.2vmin;
     --font-size-h3-3v: 3vmin;
     --font-size-p-4v: 4vmin;
@@ -46,7 +47,7 @@ h1 {
 
 h2 {
     color: var(--color-dark-blue);
-    font-size: var(--font-size-h2-5v);
+    font-size: var(--font-size-h2-6v);
 
 }
 
@@ -63,31 +64,27 @@ p {
 a {
     color: var(--color-dark-blue);
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 
 .section-hero {
     min-height: 100vh;
     padding-inline:var(--spacing-s80);
-    background-color: #242933;
 }
 
 .header-hero {
-    min-height: 100px;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .header-hero h1 {
-    background-color: aqua;
     font-size: 4.5vmin;
 }
 
-.header-hero nav {
-    background-color: blueviolet;
-}
+
 
 
 .menu-list {
@@ -98,11 +95,10 @@ a {
 
 .titulo-nos{
     text-align: center;
-    margin: var(--spacing-s20);
+    margin: var(--spacing-s30);
 }
 
 .logo{
-    background-color: #1B1F26;
     text-align: center;
     padding: 36px;
 }
@@ -114,6 +110,126 @@ a {
 .logo h2 {
     color: white;
 }
+
+.hero-introduction-container-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.hero-introduction-container {
+    min-height: 300px;
+    width: 45%;
+    padding-top: var(--spacing-s100);
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: var(--spacing-s10);
+}
+
+
+.celular-icones-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.celular-icones-container img {
+    padding-top: var(--spacing-s30);
+    height: 560px;
+}
+
+.hero-introduction-container .introduction-link {
+    margin-top: var(--spacing-s70);
+    font-size: var(--font-size-plink-3v);
+}
+
+.desenvolvido-gembyte {
+    margin-top: auto;
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+}
+
+.desenvolvido-gembyte-topo {
+    font-size: 2.5vmin;
+    font-weight: 800;
+}
+
+.gembyte-logo-nome {
+    color: var(--color-gray);
+    font-weight: 300;
+}
+
+.section-cards-funcionalidades {
+    background-color: var(--color-white-obscure);
+}
+
+.cards-home {
+    background-color: white;
+    height: 350px;
+    width: 500px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.cards-home-deitado {
+    background-color: white;
+    height: 300px;
+    width: calc(1000px - 500px);
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.card-home-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-home h3 {
+    font-size: var(--font-size-h3-3v);
+    padding-inline: var(--spacing-s40);
+    padding-top: var(--spacing-s40);
+}
+
+
+.card-img-jovinho-feliz {
+    height: 220px;
+    margin-top: var(--spacing-s60);
+}
+
+.card-img-celular-melhorar-foto {
+    height: 255px;
+    margin-top: var(--spacing-s30);
+}
+
+.card-img-celular-lembrete-deitado {
+    height: 250px;
+}
+
+.dois-cards-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-s30);
+    padding-top: var(--spacing-s100);
+}
+
+.todos-cards-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-s30);
+}
+
+section {
+    min-height: 100vh;
+}
+
+/* Css do sobre-nos */
 
 .equipe {
     text-align: center;
@@ -127,6 +243,7 @@ a {
 .equipe p{
     margin-top: var(--spacing-s60);
     margin-bottom: var(--spacing-s60);
+    color: var(--color-gray);
 }
 .equipe img{
 
@@ -142,6 +259,11 @@ a {
 .membros h1 {
     padding-top: var(--spacing-s60);
     padding-bottom: var(--spacing-s30);
+    font-size: 12vmin;
+}
+
+.membros h3 {
+    color: var(--color-gray);
 }
 
 .card-time {
@@ -155,93 +277,5 @@ a {
 }
 
 .card-time img{
-    width: 25%;
+    width: 30%;
 }
-
-
-.hero-introduction-container-row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.hero-introduction-container {
-    min-height: 300px;
-    width: 45%;
-    padding-top: var(--spacing-s70);
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    gap: var(--spacing-s10);
-    background-color: chartreuse;
-}
-
-.celular-icones-container {
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    background-color: lightcoral;
-}
-
-.celular-icones-container img {
-     min-height: 100px;
-}
-
-
-.hero-introduction-container .introduction-link {
-    margin-top: var(--spacing-s70);
-    font-size: var(--font-size-plink-3v);
-}
-
-.desenvolvido-gembyte {
-    display: flex;
-    align-self: start;
-    flex-direction: column;
-    background-color: darkblue;
-}
-
-.desenvolvido-gembyte-topo {
-    font-size: 2.5vmin;
-    font-weight: 800;
-}
-
-.section-cards-funcionalidades {
-    background-color: var(--color-white-obscure);
-}
-
-.cards-home {
-    background-color: white;
-    min-height: 420px;
-    width: 580px;
-    border-radius: 10px;
-}
-
-.cards-home h3 {
-    font-size: var(--font-size-h3-3v);
-    padding: var(--spacing-s40);
-}
-.cards-home img {
-    min-height: 290px;
-    display: flex;
-    margin: auto;
-    margin-top: var(--spacing-s60);
-
-}
-
-.dois-cards-topo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-s30);
-    padding-top: var(--spacing-s100);
-}
-
-
-
-
-
-section {
-    min-height: 100vh;
-}
-
-/* Css do sobre-nos */
