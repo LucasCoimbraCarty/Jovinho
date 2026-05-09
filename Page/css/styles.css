@@ -11,6 +11,7 @@
     --color-strong-dark:#000000;
     --color-lighter-dark:#1B1F26;
     --color-gray:#686868;
+    --color-darker-gray:#4A4A4A;
     --color-dark-blue:#242933;
     --color-white-obscure: #F5F6F9;
     --spacing-s10: 10px;
@@ -107,10 +108,20 @@ a {
     font-size: 4.5vmin;
 }
 
+.header-hero img {
+    width: 30px;
+}
+
+
 .menu-list {
     display: flex;
-    gap: var(--spacing-s20);
+    gap: var(--spacing-s40);
+    margin-right: var(--spacing-s30);
 
+}
+
+.menu-list a {
+    font-size: 2vmin;
 }
 
 .menu-list a:hover{
@@ -119,23 +130,7 @@ a {
 }
 
 
-.titulo-nos{
-    text-align: center;
-    margin: var(--spacing-s30);
-}
 
-.logo{
-    text-align: center;
-    padding: 36px;
-}
-
-.logo img {
-    width: 15%;
-}
-
-.logo h2 {
-    color: white;
-}
 
 .hero-introduction-container-row {
     display: flex;
@@ -214,15 +209,17 @@ a {
 .cards-home {
     background-color: white;
     height: 380px;
-    width: 540px;
+    min-width: 100% 100%;
+    width: 100%;
     border-radius: 10px;
     flex-wrap: wrap;
+    padding-inline: var(--spacing-s40);
 }
 
 .cards-home-deitado {
     background-color: white;
     height: 350px;
-    width: 1110px;
+    width: 70%;
     margin-bottom: var(--spacing-s100);
     border-radius: 10px;
     flex-wrap: wrap;
@@ -236,34 +233,45 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+   
+}
+
+.card-home-deitado-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cards-home h3 {
     font-size: var(--font-size-h3-3v);
-    padding-inline: var(--spacing-s40);
-    padding-top: var(--spacing-s40);
+    margin-top: var(--spacing-s40);
 }
 
 .cards-home-deitado h3 {
     font-size: var(--font-size-h3-3v);
-    padding-left: var(--spacing-s40);
-    padding-top: var(--spacing-s40);
+    margin-left: var(--spacing-s40);
+    margin-top: var(--spacing-s40);
 }
 
 
 .card-img-jovinho-feliz {
-    height: 240px;
+    /* height: 240px; */
+    width: 85%;
     margin-top: var(--spacing-s70);
 }
 
 .card-img-celular-melhorar-foto {
-    height: 280px;
+    /* height: 280px; */
+    width: 45%;
     margin-top: var(--spacing-s30);
+
 }
 
 .card-img-celular-lembrete-deitado {
-    height: 330px;
-    margin-top: var(--spacing-s20);
+    /* height: 330px; */
+    width: 93%;
+    margin-top: var(--spacing-s40);
 }
 
 
@@ -274,6 +282,7 @@ a {
     padding-top: var(--spacing-s100);
 }
 
+
 .jovinho-ia-container h1 {
     font-size: 9vmin;
     color: var(--color-lighter-dark);
@@ -281,24 +290,25 @@ a {
 
 .jovinho-ia-container h3 {
     color: var(--color-gray);
+    padding-left: 115px;
 }
 
 .jovinho-ia-conteudo {
-
     padding-bottom: var(--spacing-s60);
 }
 
 .jovinho-ia-conteudo-cm2 {
-    width: 805px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: var(--spacing-s10);
     padding-top: var(--spacing-s20);
+    padding-inline: 115px;
 }
 
 .jovinho-ia-conteudo-cm2 img {
-    width: 805px;
+    width: 100%;
     padding-top: var(--spacing-s20);
 }
 
@@ -327,27 +337,26 @@ a {
 
 .identificacao-filtros-container h3 {
     color: var(--color-gray);
-    padding-bottom: var(--spacing-s30);
+    margin-bottom: var(--spacing-s30);
 }
 
 .identificacao-filtros-container h1 {
     font-weight: 700;
-    width: auto;
     font-size: var(--font-size-h1-9v);
     color: var(--color-lighter-dark);
-    padding-bottom: var(--spacing-s30);
+    margin-bottom: var(--spacing-s30);
 }
 
 .identificacao-filtros-container p {
-    width: 50%;
     font-size: 2.5vmin;
     font-weight: 500;
     color: var(--color-gray);
 }
 
 .identificacao-filtros-container img {
-    padding-top: var(--spacing-s10);
-    padding-bottom: var(--spacing-s70);
+    margin-top: var(--spacing-s10);
+    margin-bottom: var(--spacing-s70);
+    width: 30%;
 }
 
 .p-identificacao-filtros-div {
@@ -365,27 +374,26 @@ a {
 
 .lembrete-fotos-container h3 {
     color: var(--color-gray);
-    padding-bottom: var(--spacing-s30);
+    margin-bottom: var(--spacing-s30);
 }
 
 .lembrete-fotos-container h1 {
-    width: 40%;
     font-weight: 700;
     font-size: var(--font-size-h1-9v);
     color: var(--color-lighter-dark);
-    padding-bottom: var(--spacing-s30);
+    margin-bottom: var(--spacing-s30);
 }
 
 .lembrete-fotos-container p {
-    width: 25%;
     font-size: 2.5vmin;
     font-weight: 500;
     color: var(--color-gray);
 }
 
 .lembrete-fotos-container img {
-    padding-top: var(--spacing-s40);
-    padding-bottom: var(--spacing-s70);
+    margin-top: var(--spacing-s40);
+    margin-bottom: var(--spacing-s70);
+    width: 18%;
 }
 
 .h1-lembrete-fotos-div {
@@ -407,8 +415,8 @@ a {
     display: flex;
     justify-content: center;
     gap: var(--spacing-s30);
+    width: 100%;
 }
-
 
 footer {
     background: var(--color-dark-blue);
@@ -416,51 +424,416 @@ footer {
 }
 
 
-/* Css do sobre-nos */
+/* CSS do efeitos */
+
+.section-cards-jovinho {
+    padding-inline: var(--spacing-s80);
+}
+
+.section-adapte-se {
+    min-height: 100vh;
+    padding-inline: var(--spacing-s90);
+    background-color: var(--color-white-obscure);
+}
+
+.section-dicas-filtros {
+    min-height: 100vh;
+    background-image: url(../img/efeitos/fundo-dicas.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.hero-efeitos-container {
+    margin-top: var(--spacing-s50);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-s80);
+    width: 100%;
+}
+
+.hero-efeitos-container h1{
+    margin-bottom: 100px;
+}
+
+.hero-efeitos-container img{
+    width: 40%;
+}
+
+.cards-efeitos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-s30);
+    padding-top: var(--spacing-s100);
+}
+
+
+.cards-efeitos {
+    background-color: var(--color-white-obscure);
+    height: 635px;
+    min-width: 100% 100%;
+    width: 100%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    padding-inline: var(--spacing-s40);
+}
+
+.card-efeitos-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--spacing-s30);
+   
+}
+
+.cards-efeitos h3 {
+    font-size: 4vmin;
+    margin-top: var(--spacing-s40);
+}
+
+.cards-efeitos p {
+    font-size: 2.5vmin;
+    font-weight: 500;
+    margin-top: var(--spacing-s20);
+}
+
+.card-img-sugestao {
+    width: 78%;
+}
+
+.card-img-guia {
+    width: 77%;
+}
+
+.card-img-lembrete {
+    width: 80%;
+}
+
+.ola-jovihno-container-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-block: 140px;
+}
+
+
+.ola-jovihno-container {
+    min-height: 300px;
+    width: 45%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: var(--spacing-s10);
+    margin-left: 100px;
+}
+
+.ola-jovihno-container h1 {
+    color: var(--color-lighter-dark);
+    font-size: 10vmin;
+    font-weight: 700;
+}
+
+.ola-jovihno-container p {
+    color: var(--color-dark-blue);
+   
+}
+
+.jovinho-feliz-img-container {
+    margin-top: 110px;
+}
+
+.jovinho-feliz-img-container img {
+    width: 100%;
+}
+
+.adapt-container {
+    text-align: center;
+    padding-top: var(--spacing-s100);
+}
+
+.adapt-container h3 {
+    color: var(--color-gray);
+    padding-bottom: var(--spacing-s30);
+}
+
+.adapt-container h1 {
+    font-weight: 700;
+    font-size: var(--font-size-h1-9v);
+    color: var(--color-lighter-dark);
+    margin-bottom: var(--spacing-s30);
+}
+
+.adapt-container p {
+    
+    font-size: 2.5vmin;
+    font-weight: 500;
+    color: var(--color-gray);
+}
+
+.adapt-container img {
+    margin-top: var(--spacing-s10);
+    margin-bottom: var(--spacing-s70);
+    width: 30%;
+}
+
+.p-adapt-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.adapt-imgs-container-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: var(--spacing-s50);
+    gap: var(--spacing-s30);
+}
+
+.seis-filtros-container {
+    margin-top: var(--spacing-s60);
+}
+
+.tres-filtros-linhas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-s30);
+}
+
+.filtro{
+    height: 550px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.filtro img{
+    width: 100%
+}
+
+.filtro p {
+    color: var(--color-strong-dark);
+    font-weight: 700;
+}
+
+.adapt-img-padrao-container img {
+    width: 100%;
+}
+
+.filtro-raio {
+    filter:brightness(160%);
+}
+
+.filtro-tremor {
+    filter: brightness(110%) contrast(130%);
+}
+
+.filtro-ambar {
+    filter: brightness(130%) contrast(120%);
+}
+
+.filtro-sombra {
+    filter: grayscale(100%);
+}
+
+.filtro-cristal {
+     filter: brightness(130%) contrast(70%) ;
+}
+
+.filtro-brisa {
+    filter: contrast(140%);
+}
+
+.dicas-container {
+    text-align: center;
+    padding-top: var(--spacing-s100);
+}
+
+.dicas-container h1 {
+    font-weight: 700;
+    font-size: var(--font-size-h1-9v);
+    color: var(--color-lighter-dark);
+    margin-bottom: var(--spacing-s40);
+}
+
+.dicas-container p {
+    font-size: 2.5vmin;
+    font-weight: 500;
+    color: var(--color-gray);
+}
+
+.dicas-container img {
+    margin-top: var(--spacing-s30);
+    margin-bottom: var(--spacing-s70);
+    width: 30%;
+}
+
+.p-dicas-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo-vidro {
+    border: 0.5px solid white;
+    height: 55px;
+    width: 300px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.23);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.circulo-vidro-p-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circulo-vidro-p-div p {
+    color: var(--color-darker-gray);
+    font-size: 2.5vmin;
+    font-weight: 600;
+ 
+}
+
+
+
+/* CSS do sobre-nos */
+
+
+.section-membros {
+    min-height: 100vh;
+    background-color: var(--color-white-obscure);
+}
+
+.titulo-nos-logo {
+
+    margin-top: var(--spacing-s100);
+}
+
+.titulo-nos{
+    text-align: center;
+    font-size: var(--font-size-h1-7v);
+}
+
+.logo{
+    margin-top: var(--spacing-s60);
+    text-align: center;
+    background-image: url(/Jovinho/Page/img/sobrenos/fundo-titulo-nos.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: var(--spacing-s50);
+}
+
+.logo img {
+    width: 240px;
+}
+
+.logo h2 {
+    color: var(--color-lighter-dark);
+    font-size: var(--font-size-h1-9v);
+    font-weight: 600;
+    margin-top: var(--spacing-s30);
+}
+
 
 .equipe {
     text-align: center;
+    margin-top: var(--spacing-s100);
+    margin-bottom: var(--spacing-s20);
 }
 
 .equipe h1{
     margin-block: var(--spacing-s60);
+    font-size: var(--font-size-h1-9v);
+    color: var(--color-lighter-dark);
+}
+
+.div-equipe-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--spacing-s50);
+    margin-bottom: var(--spacing-s70);
 }
 
 .equipe p{
-    margin-block: var(--spacing-s60);
+    width: 60%;
     color: var(--color-gray);
+    font-size: var(--font-size-p-3v);
+    font-weight: 500;
 }
 .equipe img{
-
     width: 80%;
     margin-bottom: var(--spacing-s60);
+    border-radius: 2px;
 }
 
 .membros{
     text-align: center;
-    background-color: var(--color-white-obscure);
+    padding-bottom: var(--spacing-s100);
 }
 
 .membros h1 {
-    padding-top: var(--spacing-s60);
-    padding-bottom: var(--spacing-s30);
-    font-size: 12vmin;
+    font-size: var(--font-size-h1-9v);
+    color: var(--color-lighter-dark);
+    padding-top: var(--spacing-s80);
+    padding-bottom: var(--spacing-s40);
 }
 
 .membros h3 {
     color: var(--color-gray);
 }
 
+.titulo-membros h3 {
+    font-weight: 600;
+    margin-bottom: var(--spacing-s30);
+
+}
+
 .card-time {
     display: flex;
     padding: var(--spacing-s80);
+
+}
+
+.card-time h2 {
+    font-weight: 500;
+    font-size: 6vmin ;
+    margin-top: var(--spacing-s10);
+}
+
+.card-time h3 {
+    font-weight: 500;
+    margin-block: var(--spacing-s10);
+}
+
+
+.card-time-div-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-time p{
-    padding-left: var(--spacing-s100);
-    padding-right: var(--spacing-s100);
+    width: 70%;
 }
 
 .card-time img{
-    width: 30%;
+    width: 35%  ;
 }
