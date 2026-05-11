@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/JOVI-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -24,7 +25,7 @@
                     <li><a href="./sobre-nos.html" class="menu-list-item">Sobre nós</a></li>
                 </ul>
             </nav>
-            <img src="./img/home/circle-user-regular-full.svg" alt="circle-user">
+            <a class="login-botao" href="./login.html"><img src="./img/home/circle-user-regular-full.svg" alt="circle-user"></a>
         </header>
 
         <div class="titulo-nos-logo">  
@@ -39,8 +40,26 @@
             <div class="div-equipe-p">
                 <p>Somos uma empresa de quatro membros, criada em 2026. Buscamos uma nota 10 da Jovi.</p>
             </div>
-            <img src="./img/sobrenos/membros.svg" alt="Time-foto">
+            <div class="slideshow-container">
+            <div class="slides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./img/sobrenos/membros.svg" alt="Time-foto1">
+            </div>
+
+            <div class="slides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./img/home/jovinho-feliz2.svg" alt="Time-foto2">
+            </div>
+
+            <div class="slides fade">
+                <div class="numbertext">3 / 3</div>
+            <img src="./img/home/Jovinho-com-fundo.svg" alt="Time-foto3">
+            </div>
+            </div>
         </div>
+
+        
+
     </section>
 
     <section class="section-membros">
@@ -91,5 +110,6 @@
 
     <footer></footer>
 
+    <script src="./js/slideshow.js"></script>
 </body>
 </html>

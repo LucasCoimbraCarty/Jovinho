@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/JOVI-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <section class="section-login">
+
+        <header class="header-hero">
+            <h1>JOVI</h1>
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="./home.html" class="menu-list-item">Home</a></li>
+                    <li><a href="./efeitos.html" class="menu-list-item">Efeitos</a></li>
+                    <li><a href="./sobre-nos.html" class="menu-list-item">Sobre nós</a></li>
+                </ul>
+            </nav>
+            <a class="login-botao" href="./login.html"><img src="./img/home/circle-user-regular-full.svg" alt="circle-user"></a>
+        </header>
+
+        <div class="card-login-container">
+            <div class="card-login" id="cardLogin">
+                <h2>Criar Conta</h2>
+                <p id="display"></p>
+                <div class="div-nome">
+                    <label for="IDNome">Nome:</label>
+                    <input type="text" id="IDNome" name="IDNome"/>
+                </div>
+                <div class="div-email">
+                    <label for="IDemail">Email:</label>
+                    <input type="text" id="IDemail" name="IDemail"/>
+                </div>
+                <div class="div-senha">
+                    <label for="IDsenha">Senha:</label>
+                    <input type="password" id="IDsenha" name="IDsenha"/>
+                </div>
+                <button id="btnLogar">Criar conta</button>
+                <p>Já possui uma conta? <a href="./login.html">Entrar</a></p>
+                <p>Email: jovinho@fiap.com.br<br>Senha: 123</p>
+            </div>
+        </div>
+
+    </section>
+    
+        <footer></footer>
+
+        <script src="./js/criarScript.js"></script>
+</body>
+</html>

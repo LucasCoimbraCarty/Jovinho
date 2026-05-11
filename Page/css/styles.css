@@ -72,6 +72,7 @@ a {
     transition: .5s;
 }
 
+
 .section-hero {
     min-height: 90vh;
     padding-inline:var(--spacing-s80);
@@ -94,6 +95,14 @@ a {
 
 .section-lembrete-fotos {
     min-height: 100vh;
+}
+
+.login-botao {
+    transition: .5s;
+}
+
+.login-botao:hover {
+    transform: scale(1.15);
 }
 
 .header-hero {
@@ -821,7 +830,7 @@ footer {
     font-weight: 500;
 }
 .equipe img{
-    width: 80%;
+    width: 100%;
     margin-bottom: var(--spacing-s60);
     border-radius: 2px;
 }
@@ -888,3 +897,107 @@ footer {
 .card-time img:hover{
     transform: scale(1.08);
 }
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: var(--color-dark-blue);
+  font-size: var(--font-size-h3-3v);
+  font-weight: 600;
+  margin-bottom: var(--spacing-s20);
+
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: .7s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* CSS do login */
+
+
+.section-login {
+    min-height: 100vh;
+    padding-inline: var(--spacing-s80);
+}
+
+.card-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: var(--spacing-s30);
+}
+
+.card-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid var(--color-strong-dark);
+    background-color: var(--color-white-obscure);
+    padding-top: var(--spacing-s40);
+    gap: var(--spacing-s20);
+    height: 550px;
+    width: 40%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.card-login input {
+    height: 30px;
+    width: 100%;
+    border: 1px solid var(--color-lighter-dark);
+    border-radius: 3px;
+    background-color: white;
+}
+
+.card-login button{
+    height: 30px;
+    width: 20%;
+    border: 1px solid var(--color-lighter-dark);
+    border-radius: 3px;
+    background-color: white;
+    transition: .4s;
+    margin-top: var(--spacing-s10);
+}
+
+.card-login button:hover{
+    background-color: #1043F3;
+    color: white;
+    border: 1px solid var(--color-lighter-dark);
+}
+
+.card-login p {
+    font-size: 2vmin;
+}
+
+.card-login a {
+    font-size: 2vmin;
+    color: #1043F3;
+    text-decoration: underline;
+}
+
