@@ -96,7 +96,6 @@ a {
     min-height: 100vh;
 }
 
-
 .header-hero {
     min-height: 80px;
     display: flex;
@@ -117,7 +116,6 @@ a {
     display: flex;
     gap: var(--spacing-s40);
     margin-right: var(--spacing-s30);
-
 }
 
 .menu-list a {
@@ -203,33 +201,35 @@ a {
     justify-content: center;
     gap: var(--spacing-s30);
     padding-top: var(--spacing-s100);
+    padding-bottom: var(--spacing-s100);
 }
 
 
 .cards-home {
+    display: flex;
+    align-items: end;
     background-color: white;
     height: 380px;
-    min-width: 100% 100%;
-    width: 100%;
+    width: 40%;
     border-radius: 10px;
     flex-wrap: wrap;
-    padding-inline: var(--spacing-s40);
     transition: .5s;
 }
 
+
 .cards-home:hover {
     transform: scale(1.05);
-    
 }
+
 
 .cards-home-deitado {
     background-color: white;
     height: 350px;
-    width: 70%;
-    margin-bottom: var(--spacing-s100);
+    width: 74%;
     border-radius: 10px;
     flex-wrap: wrap;
     display: flex;
+    align-items: end;
     transition: .5s;
 }
 
@@ -243,7 +243,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
+    width: 100%;
 }
 
 .card-home-deitado-img {
@@ -251,37 +251,31 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .cards-home h3 {
     font-size: var(--font-size-h3-3v);
-    margin-top: var(--spacing-s40);
+    margin-left: 40px;
 }
+
 
 .cards-home-deitado h3 {
     font-size: var(--font-size-h3-3v);
-    margin-left: var(--spacing-s40);
-    margin-top: var(--spacing-s40);
+    margin-left: 40px;
 }
 
-
 .card-img-jovinho-feliz {
-    /* height: 240px; */
-    width: 85%;
-    margin-top: var(--spacing-s70);
+    width: 70%;
 }
 
 .card-img-celular-melhorar-foto {
-    /* height: 280px; */
-    width: 45%;
-    margin-top: var(--spacing-s30);
-
+    width: 32%;
 }
 
 .card-img-celular-lembrete-deitado {
-    /* height: 330px; */
-    width: 93%;
-    margin-top: var(--spacing-s40);
+    width: 50%;
+    padding-left: 100px;
 }
 
 
@@ -491,9 +485,11 @@ footer {
 
 
 .cards-efeitos {
+    display: flex;
+    align-items: end;
+    justify-content: center;
     background-color: var(--color-white-obscure);
     height: 635px;
-    min-width: 100% 100%;
     width: 100%;
     border-radius: 10px;
     flex-wrap: wrap;
@@ -510,19 +506,20 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: var(--spacing-s30);
+    background-color: #1043F3;
+    width: 100%;
    
 }
 
 .cards-efeitos h3 {
     font-size: 4vmin;
-    margin-top: var(--spacing-s40);
+   
 }
 
 .cards-efeitos p {
     font-size: 2.5vmin;
     font-weight: 500;
-    margin-top: var(--spacing-s20);
+  
 }
 
 .card-img-sugestao {
