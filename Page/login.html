@@ -31,17 +31,23 @@
         <div class="card-login-container">
             <div class="card-login">
                 <h2>Login</h2>
-                 <p id="display"></p>
-                <div class="div-email">
-                    <label for="IDemail">Email:</label>
-                    <input type="email" id="IDemail" name="IDemail"/>
-                </div>
-                <div class="div-senha">
-                    <label for="IDsenha">Senha:</label>
-                    <input type="password" id="IDsenha" name="IDsenha"/>
+                <div class="inputs-login">
+                    <div class="div-email">
+                        <label for="IDemail">Email:</label>
+                        <input type="email" id="IDemail" name="IDemail" placeholder=" Endereço de e-mail"/>
+                    </div>
+                    <div class="div-senha">
+                        <label for="IDsenha">Senha:</label>
+                        <input type="password" id="IDsenha" name="IDsenha" placeholder=" Mínimo de 5 caracteres"/>
+                    </div>
                 </div>
                 <button id="btnLogar">Entrar</button>
                 <p>Não possui uma conta? <a href="./criar.html">Cria conta</a></p>
+                <div class="report-linha">
+                    <p>Problemas de login?</p>
+                    <button id="btnReportar">Reporte aqui</button>
+                </div>
+                
                 <p>Email: jovinho@fiap.com.br<br>Senha: 123</p>
             </div>
         </div>
@@ -50,6 +56,6 @@
     
         <footer></footer>
 
-          <script src="./js/loginScript.js"></script>
+          <script src="./js/loginScript.js" sr></script>
 </body>
 </html>

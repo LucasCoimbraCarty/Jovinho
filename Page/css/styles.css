@@ -960,16 +960,18 @@ footer {
     border: 3px solid var(--color-strong-dark);
     background-color: var(--color-white-obscure);
     padding-top: var(--spacing-s40);
-    gap: var(--spacing-s20);
+    gap: 25px;
     height: 550px;
     width: 40%;
     border-radius: 10px;
     flex-wrap: wrap;
 }
 
+
 .card-login input {
     height: 30px;
     width: 100%;
+    padding-left: var(--spacing-s10);
     border: 1px solid var(--color-lighter-dark);
     border-radius: 3px;
     background-color: white;
@@ -982,7 +984,6 @@ footer {
     border-radius: 3px;
     background-color: white;
     transition: .4s;
-    margin-top: var(--spacing-s10);
 }
 
 .card-login button:hover{
@@ -1001,3 +1002,19 @@ footer {
     text-decoration: underline;
 }
 
+.div-email {
+    margin-top: var(--spacing-s10);
+}
+
+.div-senha {
+    margin-top: var(--spacing-s10);
+}
+
+.report-linha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: var(--spacing-s10);
+}
